@@ -55,7 +55,12 @@
 		display: inline-block;
 		
 		&:not(:first-child) {
-			margin-left: auto;
+			// margin: 0;
+			margin-left: 2rem;
+
+			@include respond(tab-port) {
+				margin: 0;
+			}
 		}
 	}
 
